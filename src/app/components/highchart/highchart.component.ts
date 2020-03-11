@@ -73,6 +73,15 @@ export class HighchartComponent implements OnInit {
   updateFlag: boolean = false; // optional boolean
   oneToOneFlag: boolean = true; // optional boolean, defaults to false
   runOutsideAngular: boolean = false; // optional boolean, defaults to false
+  total: number = 0;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.totalDebt();
+  }
+
+  totalDebt() {
+    for (let i = 0; i < this.chartOptions.series[0]["data"].length; i++) {
+      this.total += this.chartOptions.series[0]["data"][i].y;
+    }
+  }
 }
