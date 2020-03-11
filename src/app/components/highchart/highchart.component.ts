@@ -44,8 +44,26 @@ export class HighchartComponent implements OnInit {
         colorByPoint: true,
         data: [
           { name: "One Main Financial", y: 8470.65, drilldown: "OMF" },
-          { name: "Climb Credit", y: 7800, drilldown: "Climb" },
-          { name: "Capital One Savor", y: 1900, drilldown: "Savor" }
+          { name: "Climb Credit", y: 8189.0, drilldown: "Climb" },
+          { name: "Capital One Savor", y: 1933.97, drilldown: "Savor" },
+          {
+            name: "Capital One Platinum",
+            y: 1043.57,
+            drilldown: "CC Platinum"
+          },
+          {
+            name: "Bank of America Platinum Plus",
+            y: 485.86,
+            drilldown: "BofA CC"
+          },
+          { name: "Google Synchrony", y: 647.9, drilldown: "Google Fi" },
+          { name: "Klarna", y: 356.6, drilldown: "Klarna" },
+          { name: "Rent Loan", y: 1000.0, drilldown: "Money owed to mom" },
+          {
+            name: "Pino Personal Loan",
+            y: 900.0,
+            drilldown: "Money owed to Pino"
+          }
         ],
         type: "column"
       }
