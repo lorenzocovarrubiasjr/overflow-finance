@@ -1,0 +1,30 @@
+<div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+  </div>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Add Debt"
+    placeholder="Debt Amount"
+    #debtAmountInput
+    (keyup.enter)="addDebt(debtAmountInput.value, oweToInput.value)"
+  />
+  <input
+    type="text"
+    class="form-control"
+    aria-label="I Owe Money To"
+    placeholder="I Owe Money To"
+    #oweToInput
+    (keyup.enter)="addDebt(debtAmountInput.value, oweToInput.value)"
+  />
+  <div class="input-group-prepend">
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="addDebt(debtAmountInput.value, oweToInput.value)"
+    >
+      Add
+    </button>
+  </div>
+</div>
